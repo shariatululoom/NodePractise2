@@ -3,4 +3,8 @@ var app = express()
 
 app.set('port', (process.env.PORT || 5000))
 
-console.log('Srv');
+
+app.get('/', function(request, response) {
+  response.send('Hello World!')
+})
+
